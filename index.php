@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -26,6 +27,7 @@ $f3->route('POST /order2', function ($f3) {
 //    var_dump($_POST);
     $_SESSION['petType'] = $_POST['petType'];
     $_SESSION['petColor'] = $_POST['petColor'];
+    var_dump($_SESSION);
     $view = new Template();
     echo $view->render('view/pet-order2.html');
 });
@@ -33,6 +35,7 @@ $f3->route('POST /order2', function ($f3) {
 $f3->route('POST /summary', function ($f3) {
     //echo '<h1>Hello world!</h1>';
     $_SESSION['petName'] = $_POST['petName'];
+    var_dump($_SESSION);
     $view = new Template();
     echo $view->render('view/pet-summary.html');
 });
