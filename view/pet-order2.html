@@ -20,15 +20,10 @@
 <body>
 <div class="container">
     <h2>Order a Pet</h2>
-    <form action="order2" method="post">
-        <label for="petType">What kind of pet would you like to order?</label>
-        <input type="text" id="petType" name="petType">
-        <label for="petColor">Select a Color</label>
-        <select id="petColor" name="petColor">
-            <option value="Red">Red</option>
-            <option value="Green">Green</option>
-            <option value="Yellow">Yellow</option>
-        </select>
+    <form action="summary" method="post">
+        <label for="petName">What is the name of your new pet?</label>
+        <input type="text" id="petName" name="petName">
+
         <button type="submit" class="btn-primary">Place Order</button>
     </form>
 </div>
