@@ -1,0 +1,16 @@
+{
+  "name": "public_html/328/week5",
+  "authors": [
+    {
+      "name": "Tobie Sagun",
+      "email": "sagun.tobie@student.greenriver.edu"
+    },
+    {
+      "name": "Daniel Svirida",
+      "email": "svirida.daniel@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
